@@ -1,0 +1,124 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.14.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Yulong Tan lenovo, 华中科技大学, LIC=BUURY-IWJNP-123LE-5T3IW-2VWYM-ZC19X
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Standard  Version: 5.14.0.0
+Toolchain Path:  D:\STM32\MDK(keil)\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.14.0.0
+Dialog DLL:      DCM.DLL V1.13.1.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.14.0_KEIL
+Dialog DLL:      TCM.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+C:\Users\lenovo\Desktop\car\MDK-ARM\car.uvprojx
+Project File Date:  12/03/2022
+
+<h2>Output:</h2>
+Build target 'car'
+assembling startup_stm32f103xb.s...
+compiling main.c...
+../Core/Src/main.c(130): warning:  #188-D: enumerated type mixed with another type
+                                  HAL_GPIO_WritePin(GPIOB,GPIO_PIN_3,1); 
+../Core/Src/main.c(134): warning:  #188-D: enumerated type mixed with another type
+                                  HAL_GPIO_WritePin(GPIOB,GPIO_PIN_3,0); 
+../Core/Src/main.c(143): warning:  #188-D: enumerated type mixed with another type
+                                  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_15,0); 
+../Core/Src/main.c(147): warning:  #188-D: enumerated type mixed with another type
+                                  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_15,1); 
+../Core/Src/main.c(183): warning:  #177-D: variable "out" was declared but never referenced
+        float dout=0,out3,out4,out;
+../Core/Src/main.c(194): warning:  #188-D: enumerated type mixed with another type
+        HAL_GPIO_WritePin(GPIOB,GPIO_PIN_3,1); 
+../Core/Src/main.c(197): warning:  #188-D: enumerated type mixed with another type
+        HAL_GPIO_WritePin(GPIOA,GPIO_PIN_15,1);
+../Core/Src/main.c(192): warning:  #177-D: variable "out3" was declared but never referenced
+        float out3,out4;
+../Core/Src/main.c: 8 warnings, 0 errors
+compiling gpio.c...
+compiling tim.c...
+compiling usart.c...
+compiling stm32f1xx_it.c...
+compiling stm32f1xx_hal_msp.c...
+compiling oled.c...
+..\HARDWARE\OLED\oled.c(39): warning:  #188-D: enumerated type mixed with another type
+        OLED_SDIN_Set();
+..\HARDWARE\OLED\oled.c(40): warning:  #188-D: enumerated type mixed with another type
+        OLED_SCLK_Set();
+..\HARDWARE\OLED\oled.c(41): warning:  #188-D: enumerated type mixed with another type
+        OLED_SDIN_Clr();
+..\HARDWARE\OLED\oled.c(42): warning:  #188-D: enumerated type mixed with another type
+        OLED_SCLK_Clr();
+..\HARDWARE\OLED\oled.c(48): warning:  #188-D: enumerated type mixed with another type
+        OLED_SCLK_Set();
+..\HARDWARE\OLED\oled.c(49): warning:  #188-D: enumerated type mixed with another type
+        OLED_SDIN_Clr();
+..\HARDWARE\OLED\oled.c(50): warning:  #188-D: enumerated type mixed with another type
+        OLED_SDIN_Set();
+..\HARDWARE\OLED\oled.c(56): warning:  #188-D: enumerated type mixed with another type
+        OLED_SCLK_Set();
+..\HARDWARE\OLED\oled.c(57): warning:  #188-D: enumerated type mixed with another type
+        OLED_SCLK_Clr();
+..\HARDWARE\OLED\oled.c(66): warning:  #188-D: enumerated type mixed with another type
+                OLED_SCLK_Clr();//将时钟信号设置为低电平
+..\HARDWARE\OLED\oled.c(69): warning:  #188-D: enumerated type mixed with another type
+                        OLED_SDIN_Set();
+..\HARDWARE\OLED\oled.c(73): warning:  #188-D: enumerated type mixed with another type
+                        OLED_SDIN_Clr();
+..\HARDWARE\OLED\oled.c(75): warning:  #188-D: enumerated type mixed with another type
+                OLED_SCLK_Set();//将时钟信号设置为高电平
+..\HARDWARE\OLED\oled.c(76): warning:  #188-D: enumerated type mixed with another type
+                OLED_SCLK_Clr();//将时钟信号设置为低电平
+..\HARDWARE\OLED\oled.c(434): warning:  #188-D: enumerated type mixed with another type
+        HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5|GPIO_PIN_4, 1);     
+..\HARDWARE\OLED\oled.c: 15 warnings, 0 errors
+compiling stm32f1xx_hal_gpio_ex.c...
+compiling stm32f1xx_hal_tim.c...
+compiling stm32f1xx_hal_tim_ex.c...
+compiling stm32f1xx_hal.c...
+compiling stm32f1xx_hal_rcc.c...
+compiling stm32f1xx_hal_rcc_ex.c...
+compiling stm32f1xx_hal_gpio.c...
+compiling stm32f1xx_hal_dma.c...
+compiling stm32f1xx_hal_cortex.c...
+compiling stm32f1xx_hal_pwr.c...
+compiling stm32f1xx_hal_flash.c...
+compiling stm32f1xx_hal_flash_ex.c...
+compiling stm32f1xx_hal_exti.c...
+compiling stm32f1xx_hal_uart.c...
+compiling system_stm32f1xx.c...
+linking...
+Program Size: Code=15252 RO-data=356 RW-data=68 ZI-data=1660  
+FromELF: creating hex file...
+"car\car.axf" - 0 Error(s), 23 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.2.0.pack
+                ARM::CMSIS:CORE:3.40.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 3.40.0
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\lenovo\Desktop\car\MDK-ARM\RTE
+  D:\STM32\MDK(keil)\ARM\CMSIS\4.2.0\CMSIS\Include
+  D:\STM32\MDK(keil)\Keil\STM32F1xx_DFP\2.4.0
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:3.40.0
+      Source file:   CMSIS\UserCodeTemplates\ARM\ITM_Retarget.c
+</pre>
+</body>
+</html>
